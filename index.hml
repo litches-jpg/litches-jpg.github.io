@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <title>CrackApp Forum</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .top-container{
+            background-color: transparent;
+            
+        }
+    
+        #client-button{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            border: none;
+            width:  225px;
+            height: 46px;
+            background-color: #fdcb6e;
+            color: white;
+            cursor: pointer;
+            left: 1325px;
+            top: 57px;
+            position: absolute;
+            transition-duration: 0.2s;
+            outline: none;
+            border-radius: 2px;
+        }
+        #client-button:hover{
+                        transition-duration: 0.2s;
+
+            background-color: #f0932b;
+        }
+        #client-button:focus{
+            transition-duration: 0.2s;
+            background-color: #2d3436;
+        }
+        #duyuru{
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size: 50px;
+        }
+        .left-container
+        {
+            position: absolute;
+            top: 300px;
+            left: 130px;
+            width: 600px;
+        }
+        font{
+            position: relative;
+        }
+        #mini-duyuru{
+            font-family: 'Poppins', sans-serif;
+            font-size: 17px;
+            color: white;
+        }
+        .mid-container{
+            position: absolute;
+            width: 420px;
+            height: 500px;
+            border-radius: 15px;
+            background-color: white;
+            left: 905px;
+            top: 155px;
+        }
+        #hb{
+            font-family: 'PT Sans', sans-serif;
+             color: #2d3436;
+            font-size: 27px;
+            position: relative;
+            top: 22px;
+            left: 14px;
+        }
+        hr{
+            
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+        }
+        a:hover{
+            background-color: #ecf0f1;
+        }
+        #title-font{
+            font-family: 'Rubik', sans-serif;
+            color: #f5f6fa;
+            font-size: 40px;
+        }
+        
+        
+        #animate {
+ 
+  position: absolute;
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+@keyframes example {
+  0%   {opacity: 0%; left:-250px; }
+  25%  { opacity: 10%;}
+  50%  {opacity: 40%; }
+  75%  {opacity: 60%;  }
+  100% { opacity: 100%;left:0px; }
+}
+        
+    </style>
+ 
+</head>
+<body  background="ww2.png">
+   <div id="animate">
+       
+        <div class="top-container">
+        <input type="button" value="Crack Programlarını Yükle" id="client-button">
+        
+    </div>
+    
+    <div class="left-container">
+        <font id="duyuru">Güvenilir Crack Öğrenme Platformu</font><br><br>
+        <font id="mini-duyuru">Sağ üstten gerekli crack programlarını yükleyebilirsiniz, detaylı bilgi için foruma gidiniz...</font>
+        
+        
+    </div>
+    
+    
+    
+    <div class="mid-container">
+        
+        <font id="hb">Forum Konuları</font><br><br><br><br><br><br>
+        <center>
+        <?php
+$dir = opendir("forum"); 
+
+while (($dosya = readdir($dir)) !== false) 
+{
+if(! is_dir($dosya)){ 
+$urlink = "http://crackapp.ezyro.com/forum/". $dosya;
+
+echo "<a href=$urlink>Gönderiyi gör</a>" . "-"  . $dosya ."<br >"  ."<hr color=575fcf size=1 width=250px> " ; 
+}}
+closedir($dir); 
+?>
+</center>
+        
+    </div>
+    
+    
+    
+    
+    
+   </div>
+   
+    
+    
+</body>
+</html>
