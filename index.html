@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
-      <title>CrackApp Forum</title>
+      <title>MACRO</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
@@ -22,27 +21,33 @@
         #client-button{
             font-size: 14px;
             font-family: 'Open Sans', sans-serif;
-            border: none;
+            border: 2px solid white;
             width:  225px;
             height: 46px;
-            background-color: #fdcb6e;
+            background-color: transparent;
             color: white;
             cursor: pointer;
-            left: 1325px;
-            top: 57px;
-            position: absolute;
-            transition-duration: 0.2s;
+           top: 450px;
+            left: 670px;
+            position: relative;
+            transition-duration: 0.3s;
             outline: none;
-            border-radius: 2px;
+            border-radius: 20px;
         }
         #client-button:hover{
-                        transition-duration: 0.2s;
+                        transition-duration: 0.3s;
+color: darkslategray;
+            background-color: white;
+                        box-shadow: 0px 0px 10px #ffffff;
 
-            background-color: #f0932b;
         }
         #client-button:focus{
             transition-duration: 0.2s;
-            background-color: #2d3436;
+            
+            color: white;
+            background-color: #fad30a;
+                        box-shadow: 0px 0px 10px #fad30a;
+    border: 2px solid #fad30a;
         }
         #duyuru{
             font-family: 'Roboto', sans-serif;
@@ -53,7 +58,7 @@
         {
             position: absolute;
             top: 300px;
-            left: 130px;
+            left: 630px;
             width: 600px;
         }
         font{
@@ -107,24 +112,28 @@
 }
 
 @keyframes example {
-  0%   {opacity: 0%; left:-250px; }
+  0%   {opacity: 0%; top:-150px; }
   25%  { opacity: 10%;}
   50%  {opacity: 40%; }
   75%  {opacity: 60%;  }
-  100% { opacity: 100%;left:0px; }
+  100% { opacity: 100%;top:0px; }
 }
-        
+        .top-container{
+            position: relative;
+         
+        }
     </style>
  
 </head>
-<body  background="ww2.png">
+<body background="ww2.png">
    <div id="animate">
-       
+      
         <div class="top-container">
-        <input type="button" value="Macroyu Yükle" id="client-button" onclick = "window.location= ('https://github.com/litches-jpg/litches-jpg.github.io/releases/download/0.1/relase0.1_lrmacro.rar');";>
+        
+        <input type="button" value="Macroyu Yükle" id="client-button" onclick="window.location= ('https://github.com/litches-jpg/litches-jpg.github.io/releases/download/0.1/relase0.1_lrmacro.rar');" ;="">
         
     </div>
-    
+ 
     <div class="left-container">
         <font id="duyuru">Left/Right Macro</font><br><br>
         <font id="mini-duyuru">Güvenilir bir şekilde macroyu kullanabilirsiniz...</font>
@@ -134,7 +143,7 @@
     
     
 
-</center>
+
         
     </div>
     
@@ -142,9 +151,10 @@
     
     
     
-   </div>
+   
    
     
     
-</body>
-</html>
+
+
+</body></html>
