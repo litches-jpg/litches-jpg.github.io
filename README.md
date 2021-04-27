@@ -1,2 +1,2 @@
 # litches-jpg.github.io
-Kişisel Site
+Kendimi web dillerinde geliştirdiğim test ortamı da diyebiliriz.
